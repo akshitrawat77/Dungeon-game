@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadGameIframe(username) {
         if (iframeLoader) iframeLoader.classList.remove('hidden');
         // Load the Pygbag web game with username as URL param
-        const gameUrl = `/game/index.html?username=${encodeURIComponent(username)}`;
+        const gameUrl = `game/index.html?username=${encodeURIComponent(username)}`;
         gameIframe.src = gameUrl;
     }
 
